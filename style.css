@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #F1FAEE; /* Soft White for text */
+    background-color: #2C302E; /* Unified Dark Gray background */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background:transparent; /* Blends seamlessly with body background */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity changes */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9AE19D; /* Mint Green */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    color: #F1FAEE; /* Soft White */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #9AE19D; /* Mint Green */
+}
+
+/* Hero Section */
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity changes */
+    text-align: center;
+    background: none; /* No extra background, blends with body */
+    color: #F1FAEE; /* Soft White */
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #9AE19D; /* Mint Green */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #9AE19D; /* Mint Green */
+    color: #2C302E !important; /* Ensure Dark Gray text for visibility */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn:hover {
+    background: #537A5A; /* Deep Green */
+    color: #F1FAEE !important; /* Soft White text */
+}
+
+/* Section Styling */
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    color: #F1FAEE; /* Text remains Soft White */
+    text-align: center; /* Centers all text within the section */
+}
+
+.portfolio-intro {
+    margin-bottom: 40px; /* Adjust this value to increase/decrease spacing */
+    font-size: 1.2rem; /* Optional: Slightly increase font size for readability */
+    color: #F1FAEE; /* Maintain Soft White text color */
+    text-align: center; /* Ensure it aligns with the grid below */
+}
+
+.about h2,
+.portfolio h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #9AE19D; /* Mint Green for section titles */
+    text-align: center; /* Explicitly center-align the heading */
+}
+
+
+.about p,
+.contact p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #F1FAEE; /* Consistent text color */
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #474A48; /* Medium Gray for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #9AE19D; /* Mint Green */
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #F1FAEE; /* Soft White */
+    margin-bottom: 20px;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #9AE19D; /* Mint Green */
+    font-weight: bold;
+}
+
+.portfolio-item a:hover {
+    color: #537A5A; /* Deep Green */
+}
+
+/* Contact Section */
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #474A48; /* Medium Gray */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #474A48; /* Medium Gray */
+    color: #F1FAEE; /* Soft White */
+}
+
+form button {
+    background: #9AE19D; /* Mint Green */
+    color: #2C302E; /* Dark Gray */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #537A5A; /* Deep Green */
+    color: #F1FAEE; /* Soft White */
+}
+
+/* Footer */
+.footer {
+    background: #2C302E; /* Unified with body */
+    color: #F1FAEE; /* Soft White */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
